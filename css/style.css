@@ -1,0 +1,186 @@
+@font-face {
+    font-family: myFirstFont;
+    src: url(/css/proxima.otf);
+  }
+  
+  div {
+    font-family: myFirstFont;
+  }
+
+body {
+    font-weight: 600;
+    font-size: 1.5rem;
+    overflow-x: hidden !important;
+    background: #000000;
+    background-image: url("/image/bg.webp") !important;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow-y: scroll;
+    scrollbar-width: none;
+}
+
+
+body::-webkit-scrollbar {
+    display: none;
+    /* For Chrome, Safari and Opera */
+}
+
+iframe {
+    width: 500px;
+    height: 500px;
+}
+
+h1 {
+    font-size: 4.5rem;
+    font-weight: 900 !important;
+    margin: 0px !important;
+    letter-spacing: -6px;
+    margin-top:-17px
+}
+
+h2 {
+    font-weight: 900;
+    margin-top:-10px;
+    margin-bottom:17px
+}
+
+h5 {
+    font-size: 1.5rem;
+    max-width:480px; 
+    margin:auto;
+}
+
+section{
+    position:relative;padding:2rem;  margin-left: 2rem;
+}
+
+.container{
+    padding-top:50px
+}
+
+
+
+    .logo{
+        max-width:120px;margin-top:-80px
+    }
+
+
+    @keyframes fall {
+        0% {
+            top: -100px;
+        }
+
+        100% {
+            top: 100%;
+        }
+    }
+
+
+    .coin {
+        position: absolute;
+        background-image: url("bonk.png");
+        background-size: cover;
+        width: 75px;
+        height: 75px;
+        animation-name: fall;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+        z-index: -1;
+    }
+
+    .material-shadow {
+        box-shadow: 0px 20px 10px -2px rgba(0, 0, 0, 0.08),
+            0px 20px 40px 10px rgba(0, 0, 0, 0.04),
+            0px 20px 50px 10px rgba(0, 0, 0, 0.02);
+    }
+
+    #coin-container {
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        z-index: -1;
+    }
+
+    .bottom-image {
+        max-width: 475px;
+        position: fixed;
+        bottom: 0px;
+    }
+
+    .card-box{
+
+        text-align: center;
+        background:rgba(0, 0, 0, 0.877);
+        padding:1rem; 
+        max-width:600px;
+        margin:auto;
+        border-radius:30px;
+    }
+
+    .socials{
+        max-width:220px;margin:auto;margin-bottom:1rem;
+    }
+
+    .socials img{
+        max-width:80px;
+    }
+
+    .disclaimer{
+    max-width: 550px;
+    font-size: 13px !important;
+    text-align: center;
+    margin: auto;
+    opacity: 0.5;
+    color: white !important;
+    text-justify: inter-word;
+}
+
+
+
+    @media only screen and (max-width: 1140px) {
+
+        .coin {
+            width: 30px;
+            height: 30px;
+        }
+
+        .bottom-image {
+            display: none;
+        }
+
+        section {
+            padding: 0rem !important;
+            margin-left: 0rem !important;
+        }
+
+        #dexhunter-root{
+            width:100%!important;
+        }
+
+        .socials{
+            margin-top:2rem;
+        }
+
+        
+
+       
+    }
+
+
+    @media only screen and (max-width: 1315px) {
+        .bottom-image {
+            max-width: 400px;
+        }
+
+        .logo {
+            padding-top: 20px
+        }
+
+    }
+
+    #dexhunter-container :is(.dhs-text-mainText){
+        font-size:1rem;
+    }
